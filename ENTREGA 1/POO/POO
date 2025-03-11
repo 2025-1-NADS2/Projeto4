@@ -1,0 +1,73 @@
+using System;
+
+public class Evento
+{
+    // Atributos privados
+    private string nome;
+    private string data;
+    private string local;
+
+    // Construtor
+    public Evento(string nome, string data, string local)
+    {
+        this.nome = nome;
+        this.data = data;
+        this.local = local;
+    }
+
+    public string GetNome()
+    {
+        return nome;
+    }
+
+    public void SetNome(string nome)
+    {
+        this.nome = nome;
+    }
+
+    public string GetData()
+    {
+        return data;
+    }
+
+    public void SetData(string data)
+    {
+        this.data = data;
+    }
+
+    public string GetLocal()
+    {
+        return local;
+    }
+
+    public void SetLocal(string local)
+    {
+        this.local = local;
+    }
+
+    public void ExibirInfo()
+    {
+        Console.WriteLine($"Evento: {nome}");
+        Console.WriteLine($"Data: {data}");
+        Console.WriteLine($"Local: {local}");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        
+        Evento evento1 = new Evento("Show de Música", "2025-03-20", "Arena da Cidade");
+
+        evento1.ExibirInfo();
+
+        
+        evento1.SetNome("Festival de Música");
+        evento1.SetData("2025-04-10");
+        evento1.SetLocal("Estádio Nacional");
+        
+        Console.WriteLine("\nEvento Atualizado:");
+        evento1.ExibirInfo();
+    }
+}
