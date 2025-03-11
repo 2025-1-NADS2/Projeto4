@@ -1,0 +1,126 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgba(0, 0, 255, 0.3), rgba(255, 255, 0, 0.3), rgba(255, 0, 0, 0.3)); /* Degradê azul, amarelo, vermelho com baixa opacidade */
+    color: #333;
+    text-align: center;
+}
+
+
+header {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+
+#evento {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+#evento h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre-evento {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.sobre-evento .descricao {
+    width: 45%;
+    text-align: left;
+}
+
+.sobre-evento .fotos {
+    width: 45%;
+    text-align: center;
+}
+
+.sobre-evento .fotos img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Seção Endereço e Exemplo de Mapa */
+#endereco {
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#endereco h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#endereco p {
+    text-align: center;
+    font-size: 16px;
+}
+
+#mapa-exemplo {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#mapa-exemplo p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+#gerar-ingresso {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.btn-gerar-ingresso {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-gerar-ingresso:hover {
+    background-color: #0056b3;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 50px;
+    padding: 10px;
+    background: linear-gradient(to right, rgba(0, 0, 255, 0.6), rgba(255, 255, 0, 0.6), rgba(255, 0, 0, 0.6)); /* Degradê com mais opacidade */
+    color: #fff;
+}
