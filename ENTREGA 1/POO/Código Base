@@ -1,0 +1,98 @@
+// Classe Evento
+class Evento {
+    constructor(nome, data, local, imagem) {
+        this.nome = nome;
+        this.data = data;
+        this.local = local;
+        this.imagem = imagem;
+    }
+
+    // Métodos Getters e Setters
+    getNome() {
+        return this.nome;
+    }
+
+    setNome(nome) {
+        this.nome = nome;
+    }
+
+    getData() {
+        return this.data;
+    }
+
+    setData(data) {
+        this.data = data;
+    }
+
+    getLocal() {
+        return this.local;
+    }
+
+    setLocal(local) {
+        this.local = local;
+    }
+
+    getImagem() {
+        return this.imagem;
+    }
+
+    setImagem(imagem) {
+        this.imagem = imagem;
+    }
+}
+
+// Classe SistemaEventos
+class SistemaEventos {
+    constructor() {
+        this.eventos = []; // Vetor para armazenar eventos
+    }
+
+    // Método para adicionar evento
+    adicionarEvento(evento) {
+        if (this.eventos.length < 10) { 
+            this.eventos.push(evento); 
+            console.log("Evento adicionado com sucesso!");
+        } else {
+            console.log("Limite de eventos atingido.");
+        }
+    }
+
+    // Método para listar eventos
+    listarEventos() {
+        if (this.eventos.length === 0) {
+            console.log("Nenhum evento cadastrado.");
+        } else {
+            this.eventos.forEach((evento, index) => {
+                console.log(`Evento ${index + 1}: ${evento.getNome()} - ${evento.getData()} - ${evento.getLocal()}`);
+            });
+        }
+    }
+
+    // Método para remover evento
+    removerEvento(nome) {
+        let indice = this.eventos.findIndex(evento => evento.getNome() === nome);
+        if (indice !== -1) {
+            this.eventos.splice(indice, 1); // Remove o evento pelo índice
+            console.log("Evento removido com sucesso.");
+        } else {
+            console.log("Evento não encontrado.");
+        }
+    }
+}
+
+
+let sistema = new SistemaEventos();
+
+// Criando e adicionando eventos
+let evento1 = new Evento("Palestra", "2025-06-01", "Faculdade Fecap", "imagem1.jpg");
+let evento2 = new Evento("Curso de Culinaria", "2025-07-15", "Praça Central", "imagem2.jpg");
+
+sistema.adicionarEvento(evento1);
+sistema.adicionarEvento(evento2);
+
+
+sistema.listarEventos();
+
+
+sistema.removerEvento("Palestra");
+sistema.listarEventos();
