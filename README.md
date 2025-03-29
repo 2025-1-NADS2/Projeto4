@@ -18,13 +18,7 @@ alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
 </p>
 
 ### 🎯 **Sobre o Projeto**
-O **Sistema de Eventos Beneficentes** é uma plataforma que facilita o agendamento e a visualização de eventos sociais e beneficentes. Desenvolvido com base em **Programação Orientada a Objetos (POO)**, o sistema permite que administradores cadastrem eventos com informações detalhadas e que visitantes explorem e se inscrevam de maneira intuitiva.
-
-### 🛠 **Tecnologias Utilizadas**
-- **Frontend:** HTML, CSS, JavaScript  
-- **Backend:** [Definir a linguagem/framework utilizado]  
-- **Banco de Dados:** [Definir a tecnologia]  
-- **Segurança:** Implementação de criptografia inovadora  
+O **Sistema de Eventos do Instituto Criativo** Será uma plataforma que facilitará o agendamento e a visualização de eventos sociais e beneficentes. Desenvolvido com base em **Programação Orientada a Objetos (POO)**, o sistema permitirá que administradores cadastrem eventos com informações detalhadas e que visitantes explorem e se inscrevam de maneira intuitiva.
 
 ### 🚀 **Diferenciais**
 - Interface intuitiva e acessível  
@@ -33,11 +27,7 @@ O **Sistema de Eventos Beneficentes** é uma plataforma que facilita o agendamen
 - Visual dinâmico com um **degradê azul, amarelo e vermelho**  
 
 ### 📌 **Status do Projeto**
-- ✅ Implementação da Home Page  
-- ✅ Funcionalidade de adição de eventos  
+- ✅ Implementação da Home Page    
 - 🚧 Integração com backend (em andamento)  
 - 🛠 Melhorias na segurança e na experiência do usuário  
 
----
-
-📅 **Entrega parcial:** 11 de março de 2025  
